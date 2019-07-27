@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "atomicops.h": "cpp",
+        "readerwriterqueue.h": "cpp",
+        "packet_publisher.h": "c",
+        "stdio.h": "c",
+        "sdkddkver.h": "c",
+        "hooking.h": "c",
+        "memscan.h": "c",
+        "windows.h": "c",
+    }
+}
