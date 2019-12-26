@@ -31,7 +31,7 @@ extern "C"
         LPSTR szCustomPacket;
 
         _asm MOV szPacket, EDX;
-        szCustomPacket = (LPSTR)malloc(strlen(szPacket) + 2);
+        szCustomPacket = (LPSTR)malloc(strlen(szPacket) + 7);
         sprintf(szCustomPacket, "send %s\n", szPacket);
 
         qSend.enqueue(szCustomPacket);
@@ -43,7 +43,7 @@ extern "C"
         LPSTR szCustomPacket;
 
         _asm MOV szPacket, EDX;
-        szCustomPacket = (LPSTR)malloc(strlen(szPacket) + 1);
+        szCustomPacket = (LPSTR)malloc(strlen(szPacket) + 6);
         sprintf(szCustomPacket, "recv %s", szPacket);
 
         qRecv.enqueue(szCustomPacket);
